@@ -4,6 +4,8 @@ public = true
 domain = "DOMAIN"
 
 [data]
+res = "/luclient/res"
+versions = "/versions"
 cdclient = "/luclient/res/cdclient.fdb"
 locale = "/luclient/locale/locale.xml"
 explorer_spa = "/dist"
