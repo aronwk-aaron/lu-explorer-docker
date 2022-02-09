@@ -1,7 +1,7 @@
 [general]
 port = 3030
 public = false
-domain = "lu-explorer"
+domain = "live.luex.aronwk.com"
 
 [data]
 cdclient = "/luclient/res/cdclient.fdb"
