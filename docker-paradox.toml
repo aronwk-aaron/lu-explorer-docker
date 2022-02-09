@@ -1,7 +1,7 @@
 [general]
 port = 3030
 public = false
-domain = "localhost"
+domain = "0.0.0.0:3030"
 
 [data]
 cdclient = "/luclient/res/cdclient.fdb"
