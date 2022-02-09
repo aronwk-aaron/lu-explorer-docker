@@ -12,5 +12,6 @@ COPY --from=builder /app/docs /usr/src/explorer/docs
 WORKDIR /usr/src/paradox-server
 RUN cargo install --git https://github.com/LUDevNet/ParadoxServer.git --branch main
 COPY docker-paradox.toml paradox.toml
+EXPOSE 3030
 
 ENTRYPOINT ["paradox-server"]
