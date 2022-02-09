@@ -3,7 +3,7 @@
 FROM node:16.13.1 as builder
 WORKDIR /app
 RUN git clone https://github.com/Xiphoseer/lu-explorer.git .
-RUN npm install
+RUN npm ci
 RUN npx ng build --configuration production
 
 FROM rust:1.58.1-buster
