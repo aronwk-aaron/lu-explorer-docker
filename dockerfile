@@ -10,7 +10,7 @@ FROM rust:1.58.1-buster
 COPY --from=builder /app/docs /usr/src/explorer/docs
 
 WORKDIR /usr/src/paradox-server
-COPY docker-paradox.toml paradox.toml
 RUN cargo install --git https://github.com/LUDevNet/ParadoxServer.git --branch main
+COPY docker-paradox.toml paradox.toml
 
 ENTRYPOINT ["paradox-server"]
