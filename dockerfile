@@ -7,7 +7,7 @@ RUN npm install
 RUN npx ng build --configuration production
 
 FROM rust:1.58.1-buster
-COPY --from=builder /app/dist /usr/src/explorer/dist
+COPY --from=builder /app/dist /dist
 
 WORKDIR /usr/src/paradox-server
 RUN cargo install --git https://github.com/LUDevNet/ParadoxServer.git --branch main
