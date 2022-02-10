@@ -10,7 +10,7 @@ FROM rust:1.58.1-bullseye
 COPY --from=builder /app/dist /dist
 
 WORKDIR /usr/src/paradox-server
-RUN cargo install --git https://github.com/LUDevNet/ParadoxServer.git --branch main
+RUN cargo install --git https://github.com/aronwk-aaron/ParadoxServer.git --branch main
 COPY docker-paradox.toml paradox.toml
 COPY entrypoint.sh .
 RUN chmod +x ./entrypoint.sh
