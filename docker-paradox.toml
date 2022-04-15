@@ -11,3 +11,9 @@ locale = "/luclient/locale/locale.xml"
 explorer_spa = "/dist"
 lu_res_cache = "/cache/lu-res"
 lu_json_cache = "/cache/lu-json"
+
+[auth]
+user_agents = [
+    "Discordbot/",
+    "Macintosh; Intel Mac OS X 11.6; rv:92.0"
+]
