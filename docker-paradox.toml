@@ -1,6 +1,6 @@
 [general]
 port = 3030
-public = false
+public = true
 domain = "DOMAIN"
 
 [data]
