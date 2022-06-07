@@ -12,6 +12,9 @@ explorer_spa = "/dist"
 lu_res_cache = "/cache/lu-res"
 lu_json_cache = "/cache/lu-json"
 
+[auth.basic]
+USERNAME = "PASSWORD"
+
 [auth]
 user_agents = [
     "Discordbot/",
