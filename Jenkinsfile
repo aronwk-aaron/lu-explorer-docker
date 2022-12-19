@@ -10,7 +10,7 @@ properties([
         selectedValue: 'DEFAULT',
         sortMode: 'NONE',
         tagFilter: '*',
-        useRepository: 'git@github.com:aronwk-aaron/lu-explorer-docker.git',
+        useRepository: 'git@github.com:LUDevNet/lu-explorer.git',
         type: 'PT_BRANCH',
         listSize: "1"
     )
@@ -29,7 +29,7 @@ node('worker'){
                 userRemoteConfigs: [
                     [
                         credentialsId: 'aronwk',
-                        url: 'git@github.com:aronwk-aaron/lu-explorer-docker.git'
+                        url: 'git@github.com:LUDevNet/lu-explorer.git'
                     ]
                 ]
             ])
