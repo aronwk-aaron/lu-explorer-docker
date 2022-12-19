@@ -41,6 +41,7 @@ node('worker'){
             } else {
                 tag = params.GIT_BRANCH.replace('\\', '-')
             }
+            sh "docker image rm aronwk/lu-explorer:$tag"
             sh "docker build -t aronwk/lu-explorer:$tag ."
         }
         stage('Push Container'){
